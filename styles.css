@@ -1,0 +1,179 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+element.style {
+    color: #ffffff;
+    font-size: 10px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+}
+.bwp-widget-policy-slider {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+body {
+    color: #868686;
+    background-color: #0000;
+    font-family: Cabin, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+:root {
+    --jdgm-primary-color: #399;
+    --jdgm-secondary-color: rgba(51, 153, 153, 0.1);
+    --jdgm-star-color: #399;
+    --jdgm-write-review-text-color: white;
+    --jdgm-write-review-bg-color: #339999;
+    --jdgm-paginate-color: #399;
+    --jdgm-border-radius: 0;
+    --jdgm-reviewer-name-color: #339999;
+}
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+#heading{
+  margin-left:30px;
+  font-size:40px;
+  max-width:140px;
+  color:black;
+  font-style:oblique;
+  display:flex;
+  align-items:center;
+}
+
+#nav-item{
+  display:flex;
+  margin-left:50px;
+  justify-content:center;
+  flex-wrap:wrap;
+  font-size:17px;
+  align-items:center;
+  gap:20px;
+  font-weight:bold;
+}
+
+#nav-item li:hover a {
+  color:#41ece2;
+}
+
+/* navbar background */
+#navbar {
+  background-color: white;
+}
+
+/* icon styling */
+#icon{
+  display:flex;
+  align-items:center;
+  margin-left:auto; /* push icons to the right if using flex layout */
+  font-family: Arial, Helvetica, sans-serif; /* fixed typo */
+  line-height:1;
+}
+
+/* make icons visible & spaced */
+#icon i{
+  font-size:20px;
+  margin-left:14px;
+  cursor:pointer;
+  color:#000;
+}
+#icon i:hover {
+  color:#41ece2;
+}
+
+
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;   /* hides text outside */
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  width: 200%; /* since we have 2 slides */
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide-text {
+  flex: 0 0 100%; /* each slide takes full width */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+   
+
+    
