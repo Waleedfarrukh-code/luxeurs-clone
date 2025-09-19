@@ -48,7 +48,7 @@ body {
     text-align: left;
     background-color: #fff;
 }
-:root {
+/* :root {
     --jdgm-primary-color: #399;
     --jdgm-secondary-color: rgba(51, 153, 153, 0.1);
     --jdgm-star-color: #399;
@@ -57,13 +57,13 @@ body {
     --jdgm-paginate-color: #399;
     --jdgm-border-radius: 0;
     --jdgm-reviewer-name-color: #339999;
-}
-:root {
+} */
+/* :root {
     --animate-duration: 1s;
     --animate-delay: 1s;
     --animate-repeat: 1;
-}
-:root {
+} */
+/* :root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -84,7 +84,7 @@ body {
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #000000;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -92,7 +92,7 @@ body {
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
+} */
 
 #heading{
   margin-left:30px;
@@ -101,12 +101,13 @@ body {
   color:black;
   font-style:oblique;
   display:flex;
+  
   align-items:center;
 }
 
 #nav-item{
   display:flex;
-  margin-left:50px;
+  margin-left:100px;
   justify-content:center;
   flex-wrap:wrap;
   font-size:17px;
@@ -122,13 +123,16 @@ body {
 /* navbar background */
 #navbar {
   background-color: white;
+  
 }
 
 /* icon styling */
 #icon{
+
   display:flex;
+  flex-wrap: wrap;
   align-items:center;
-  margin-left:auto; /* push icons to the right if using flex layout */
+  margin-left:100px; /* push icons to the right if using flex layout */
   font-family: Arial, Helvetica, sans-serif; /* fixed typo */
   line-height:1;
 }
@@ -136,7 +140,8 @@ body {
 /* make icons visible & spaced */
 #icon i{
   font-size:20px;
-  margin-left:14px;
+  margin-right:2px;
+  margin-left:20px;
   cursor:pointer;
   color:#000;
 }
@@ -150,7 +155,7 @@ body {
   color: #fff;
   font-size: 12px;
   font-family: Arial, sans-serif;
-  position: fixed;
+  position: absolute;
   top: 70px;
   left: 0;
   width: 100%;
@@ -159,12 +164,15 @@ body {
   height: 25px;
   display: flex;
   align-items: center;
+
+
 }
 
 .slider {
   display: flex;
-  width: 200%; /* since we have 2 slides */
+  width: 100%; /* since we have 2 slides */
   transition: transform 0.6s ease-in-out;
+    
 }
 
 .slide-text {
@@ -173,7 +181,239 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 25px;
+ 
+
+   
 }
+.wpbingo-slideshow__item-image {
+   height: 140vh;
+   width: 210vh;
+   overflow: hidden;
    
 
+
+}
+/* =========================best-sellers PART CSS ========================== */
+.best-sellers{
+  COLOR:var(--dark); 
+padding: 30px 20px  30px 20px ;
+  display: flex;
+  font-weight: 400;
+  justify-content: center; 
+
+}
+
+        .product-card {
+      margin-top: 2px;
+      margin-left: 20px;
+      margin-right: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background-color: white;
+      border: 1px solid #eee;
+    }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            height: 480px;
+            object-fit: cover;
+            /* background-color: #f5f5f5; */
+        }
+        .product-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+            height: 50px;
+            overflow: hidden;
+        }
+        .product-title:hover {
+          color:#007bff;
+}
+        .price-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .current-price {
+            font-weight: 700;
+            color: #000000;
+            font-size: 1.3rem;
+            margin-right: 10px;
+            margin-left: 60px;
+        }
+        .current-price-2 {
+            font-weight: 600;
+            color: #fd3f3f;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        .discount-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #e8523e;
+            color: white;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .load-more-btn {
+            border: none;
+            line-height: 45px;
+            padding: 0 40px;
+           background: #000;
+            color: #fff;
+            position: relative;
+             z-index: 1;
+            font-weight: 600;
+            width: 200px;
+            border-radius: 0px;
+            margin-left: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.6s;
+            margin-bottom: 10px;
+            display: inline-block;
+            
     
+        }
+        .load-more-btn:hover {
+          background: #0056b3;
+          animation: fadeIn 2s ease-in-out;
+        }
+  /* =========================NEW ARRIVALS PART CSS ========================== */
+
+  .NEW_ARRIVALS {
+  COLOR:var(--dark);
+  padding: 10px 20px  10px 20px ; 
+  display: flex;
+  font-weight: 400;
+  justify-content: center; 
+
+
+}
+ .discount-badge-1 {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: hsl(0, 0%, 100%);
+            color: white;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+
+     .product-card {
+      margin-top: 2px;
+      margin-left: 20px;
+      margin-right: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background-color: white;
+      border: 1px solid #eee;
+    }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            height: 480px;
+            object-fit: cover;
+            /* background-color: #f5f5f5; */
+        }
+        .product-title-1 {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+            height: 50px;
+            overflow: hidden;
+        }
+        .product-title-1:hover {
+          color:#007bff;
+}
+        .price-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .current-price-3{
+            font-weight: 500;
+            color: #000000;
+            font-size: 1.3rem;
+            margin-right: 10px;
+            margin-left: 60px;
+        }
+       
+      
+/* //////////////////////////////// */
+ /* box-sizing: border-box */
+ 
+.carousel{
+  position:relative;
+  width:300px;max-width:95%;
+  margin:40px auto;
+  overflow:hidden;
+  border-radius:8px;
+
+}
+.slides{
+  display:flex;
+  transition:transform .4s ease;
+  margin: 0px 10px;
+}
+.slide{
+  min-width:100%;
+position:relative;
+  
+}
+.slide img{width:100%;display:block;border-radius:8px;}
+.overlay{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.45);
+  opacity:0;
+  display:flex;justify-content:center;align-items:flex-end;
+  gap:12px;padding-bottom:20px;
+  transition:opacity .3s;
+}
+.slide:hover .overlay{opacity:1;}
+.view-btn,.buy-btn{
+  background:#fff;border:none;
+  padding:8px 14px;border-radius:4px;cursor:pointer;
+}
+.nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  font-size:32px;background:rgba(0,0,0,0.4);
+  color:#fff;border:none;padding:6px 12px;
+  cursor:pointer;opacity:0;transition:opacity .3s;
+  z-index:10;
+}
+.carousel:hover .nav{opacity:1;}
+.prev{left:10px;}
+.next{right:10px;}
+
+  /* =========================Embroidered 3PC PART CSS ========================== */
+.Embroidered-3PC{
+  COLOR:var(--dark); 
+padding: 30px 20px  30px 20px ;
+  display: flex;
+  font-weight: 400;
+  justify-content: center; 
+
+}
